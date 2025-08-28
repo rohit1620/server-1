@@ -4,6 +4,6 @@ const authRouter=require("../controlers/auth-controles")
 
 router.route("/").get(authRouter.home)
 
-router.route("/register").get(authRouter.register)
+router.route("/register").post(authRouter.register)
 
 module.exports=router;
